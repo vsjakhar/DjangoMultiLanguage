@@ -6,7 +6,6 @@ __pycache__
 *migrations/
 *.sqlite3
 debug-error.log
-securitytroops/settings/
 *media/
 # *static/
 static/
