@@ -115,6 +115,20 @@ Django Multi Language
 	sudo apt-get install memcached
 	sudo service memcached start
 
+## Multilanguage Library Install in Mac
+	brew install gettext
+	brew link --force gettext
+	export PATH=$PATH:/usr/local/Cellar/gettext/0.20.2/bin
+	python3 manage.py makemessages -l hi	# After this change Other Language(Hindi) text in po file
+	django-admin compilemessages			# Compile Language messages, that will create .mo file
+
+## Multilanguage Library Install in Ubuntu
+	sudo apt-get install gettext
+
+## Multilanguage Library Install in Windows
+	[Official Website](https://www.gnu.org/software/gettext/)
+	[Download here](https://mlocati.github.io/articles/gettext-iconv-windows.html)
+
 ## Stripe Payment Gateway Integration
 [Stripe Checkout page]('https://stripe.com/docs/payments/checkout')
 [Stripe checkout One time redirect]('https://stripe.com/docs/payments/checkout/one-time#redirect-checkout')
